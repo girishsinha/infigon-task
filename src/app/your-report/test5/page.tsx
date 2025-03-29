@@ -3,11 +3,6 @@ import CardGray from "@/app/components/CardGray";
 import learningStyle from "@/app/utility/learningStyle.json";
 import applyLearning from "@/app/utility/applyLearning.json";
 const Page: React.FC = () => {
-  interface card {
-    title: string;
-    description: string;
-  }
-
   return (
     <div className="flex flex-col gap-6">
       <h1 className="text-3xl  font-bold">

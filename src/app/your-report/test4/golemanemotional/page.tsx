@@ -41,11 +41,6 @@ const Page: React.FC = () => {
     },
   ];
 
-  interface card {
-    title: string;
-    description: string;
-  }
-
   return (
     <div className="flex flex-col gap-6">
       <h3 className="font-bold text-lg text-[#0047AB] pt-4">
