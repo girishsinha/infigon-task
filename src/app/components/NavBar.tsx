@@ -15,9 +15,9 @@ const NavBar: React.FC = () => {
 
         {/* Menu Items */}
         <ul
-          className={`flex md:flex-row flex-col gap-4 md:gap-0 md:space-x-6 z-10 absolute md:static p-10 pt-20  md:p-0 md:w-auto w-2/3 h-full bg-amber-300   top-0 md:top-0 transition-all duration-100 ${
+          className={`md:flex items-center md:flex-row flex-col gap-8 md:gap-0 md:space-x-6 z-10 absolute md:static p-10 pt-20  md:p-0 md:w-auto w-2/3 h-full  top-0 md:top-0 transition-all duration-100 ${
             isOpen ? "right-0 block" : "-right-72 hidden"
-          } md:block text-[#5B6871]`}
+          }  text-[#5B6871] bg-white `}
         >
           <li className="">
             <Link
@@ -53,7 +53,7 @@ const NavBar: React.FC = () => {
           </li>
           <li className=" ">
             <Link
-              href="/"
+              href="/your-report"
               className="hover:text-gray-600 focus:bg-[#F9FAFB] md:p-2.5 rounded-lg focus:text-black"
             >
               Your Report
