@@ -1,4 +1,5 @@
-import { defaultOverrides } from "next/dist/server/require-hook";
+"use client";
+import React from "react";
 interface card {
   title: string;
   description: string;

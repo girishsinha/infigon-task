@@ -83,13 +83,13 @@ const Page: React.FC = () => {
 
 export default Page;
 
-const Card: React.FC = () => {
-  return (
-    <div className=" w-72 h-24 border-2 p-2 border-[#CACACA] rounded-xl">
-      <h3 className="font-bold"> Extraversion (E) </h3>
-      <p className="text-[#5B6871]">
-        Energized by social interactions and external activities
-      </p>
-    </div>
-  );
-};
+// const Card: React.FC = () => {
+//   return (
+//     <div className=" w-72 h-24 border-2 p-2 border-[#CACACA] rounded-xl">
+//       <h3 className="font-bold"> Extraversion (E) </h3>
+//       <p className="text-[#5B6871]">
+//         Energized by social interactions and external activities
+//       </p>
+//     </div>
+//   );
+// };

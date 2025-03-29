@@ -5,7 +5,6 @@ interface circul {
   color: string;
   tag: string;
   num: number;
-  key?: any;
 }
 const Page: React.FC = () => {
   interface obj {

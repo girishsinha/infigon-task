@@ -1,5 +1,4 @@
 import React from "react";
-import CardGray from "@/app/components/CardGray";
 
 const Page: React.FC = () => {
   return (
@@ -66,14 +65,14 @@ const Card: React.FC = () => {
             <h3 className="font-bold text-black">{"\u25CF"}pros</h3>
             <p>
               They are friendly, approachable, & enjoy being around people. They
-              are often seen as the "hosts" of their social circles.
+              are often seen as the hosts of their social circles.
             </p>
           </li>
           <li>
             <h3 className="font-bold text-black">{"\u25CF"} cons</h3>{" "}
             <p>
               They are friendly, approachable, & enjoy being around people. They
-              are often seen as the "hosts" of their social circles.
+              are often seen as the hosts of their social circles.
             </p>
           </li>
         </ul>

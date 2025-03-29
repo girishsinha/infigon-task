@@ -1,5 +1,4 @@
 import React from "react";
-import CardGray from "@/app/components/CardGray";
 
 const Page: React.FC = () => {
   interface scores {
