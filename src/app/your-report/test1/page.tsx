@@ -39,8 +39,8 @@ const Page: React.FC = () => {
           <Image
             width={140}
             height={140}
-            src="/line.svg"
-            alt="line"
+            src="/Line.svg"
+            alt="Line"
             className="md:block hidden"
           />
           <Card />
@@ -51,8 +51,8 @@ const Page: React.FC = () => {
           <Image
             width={140}
             height={140}
-            src="/line.svg"
-            alt="line"
+            src="/Line.svg"
+            alt="Line"
             className="md:block hidden"
           />
           <Card />
@@ -63,8 +63,8 @@ const Page: React.FC = () => {
           <Image
             width={140}
             height={140}
-            src="/line.svg"
-            alt="line"
+            src="/Line.svg"
+            alt="Line"
             className="md:block hidden"
           />
           <Card />
@@ -75,8 +75,8 @@ const Page: React.FC = () => {
           <Image
             width={140}
             height={140}
-            src="/line.svg"
-            alt="line"
+            src="/Line.svg"
+            alt="Line"
             className="md:block hidden"
           />
           <Card />

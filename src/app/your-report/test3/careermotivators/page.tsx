@@ -2,6 +2,8 @@ import React from "react";
 import CardGray from "@/app/components/CardGray";
 import purpose from "@/app/utility/purposeCM.json";
 import benefits from "@/app/utility/benefitsCM.json";
+import topTen from "@/app/utility/topTen.json";
+
 const Page: React.FC = () => {
   return (
     <div className="flex flex-col gap-6">
@@ -9,16 +11,9 @@ const Page: React.FC = () => {
         TOP 10 Career Motivators
       </h3>
       <div className="grid grid-cols-2 gap-4 items-center">
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
+        {topTen.map(({ title, color, num }) => (
+          <Card key={num} title={title} color={color} num={num} />
+        ))}
       </div>
       <h3 className="font-bold text-lg text-[#0047AB] pt-4">
         Purpose and Applications of Career Motivators in career development
@@ -44,13 +39,25 @@ const Page: React.FC = () => {
 
 export default Page;
 
-const Card: React.FC = () => {
+interface data {
+  title: string;
+  color: string;
+  num: number;
+}
+
+const Card: React.FC<data> = ({ title, color, num }) => {
   return (
-    <div className=" flex p-2 ring-1 items-center ring-[] rounded-full ">
-      <div className="bg-[#E5E5E5] flex items-center justify-center font-bold text-white rounded-full w-8 h-8">
-        <h3>1</h3>
+    <div
+      style={{ borderColor: `${color}` }}
+      className=" flex p-2 border-2 items-center  rounded-full "
+    >
+      <div
+        style={{ backgroundColor: `${color}` }}
+        className=" flex items-center justify-center font-bold text-white rounded-full w-8 h-8"
+      >
+        <h3 className="text-white">{num}</h3>
       </div>
-      <h3 className="text-[#5B6871] text-center w-full">Engineer</h3>
+      <h3 className="font-bold text-center w-full">{title}</h3>
     </div>
   );
 };

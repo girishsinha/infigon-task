@@ -1,0 +1,52 @@
+[
+  {
+    "title": "Achievement and Results",
+    "color": "#1999A1",
+    "num": 1
+  },
+  {
+    "title": "Leadership and Influence",
+    "color": "#00A3FF",
+    "num": 2
+  },
+  {
+    "title": "Helping Others",
+    "color": "#A15A19",
+    "num": 3
+  },
+  {
+    "title": "Continuous Learning",
+    "color": "#194CA1",
+    "num": 4
+  },
+  {
+    "title": "Financial Rewards",
+    "color": "#55DCDC",
+    "num": 5
+  },
+  {
+    "title": "Independence",
+    "color": "#EE82FF",
+    "num": 6
+  },
+  {
+    "title": "Creativity and Innovation",
+    "color": "#F6C61A",
+    "num": 7
+  },
+  {
+    "title": "Teamwork and Collaboration",
+    "color": "#B97979",
+    "num": 8
+  },
+  {
+    "title": "Security and Stability",
+    "color": "#9140F8",
+    "num": 9
+  },
+  {
+    "title": "Flexibility and Work-Life Balance",
+    "color": "#FA9B56",
+    "num": 10
+  }
+]

@@ -1,0 +1,130 @@
+[
+  {
+    "title": "Inspector",
+    "color": "#D9E9F0",
+    "textColor": "#3D6272",
+    "badge": "ISTJ",
+    "dec": "Focuses on concrete, tangible information and present realities tangible information and present realities",
+    "img": "/characters/inspector.png"
+  },
+  {
+    "title": "Protector",
+    "color": "#D9E9F0",
+    "textColor": "#3D6272",
+    "badge": "ISFJ",
+    "dec": "Focuses on concrete, tangible information and present realities tangible information and present realities",
+    "img": "/characters/protector.png"
+  },
+  {
+    "title": "Artist",
+    "color": "#D9E9F0",
+    "textColor": "#3D6272",
+    "badge": "ISFP",
+    "dec": "Focuses on concrete, tangible information and present realities tangible information and present realities",
+    "img": "/characters/artist.png"
+  },
+  {
+    "title": "Consul",
+    "color": "#D9E9F0",
+    "textColor": "#3D6272",
+    "badge": "ESFJ",
+    "dec": "Focuses on concrete, tangible information and present realities tangible information and present realities",
+    "img": "/characters/consul.png"
+  },
+  {
+    "title": "Virtuoso",
+    "color": "#EFE2C9",
+    "textColor": "#AF935E",
+    "badge": "ISTP",
+    "dec": "Focuses on concrete, tangible information and present realities tangible information and present realities",
+    "img": "/characters/virtuoso.png"
+  },
+  {
+    "title": "Entrepreneur",
+    "color": "#EFE2C9",
+    "textColor": "#AF935E",
+    "badge": "ESTP",
+    "dec": "Focuses on concrete, tangible information and present realities tangible information and present realities",
+    "img": "/characters/entrepreneur.png"
+  },
+  {
+    "title": "Entertainer",
+    "color": "#EFE2C9",
+    "textColor": "#AF935E",
+    "badge": "ESFP",
+    "dec": "Focuses on concrete, tangible information and present realities tangible information and present realities",
+    "img": "/characters/entertainer.png"
+  },
+  {
+    "title": "Executive",
+    "color": "#EFE2C9",
+    "textColor": "#AF935E",
+    "badge": "ESTJ",
+    "dec": "Focuses on concrete, tangible information and present realities tangible information and present realities",
+    "img": "/characters/executive.png"
+  },
+  {
+    "title": "Advocate",
+    "color": "#D6ECE2",
+    "textColor": "#3D6272",
+    "badge": "INFJ",
+    "dec": "Focuses on concrete, tangible information and present realities tangible information and present realities",
+    "img": "/characters/advocate.png"
+  },
+  {
+    "title": "Mediator",
+    "color": "#D6ECE2",
+    "textColor": "#3D6272",
+    "badge": "INFP",
+    "dec": "Focuses on concrete, tangible information and present realities tangible information and present realities",
+    "img": "/characters/mediator.png"
+  },
+  {
+    "title": "Campaigner",
+    "color": "#D6ECE2",
+    "textColor": "#3D6272",
+    "badge": "ENFP",
+    "dec": "Focuses on concrete, tangible information and present realities tangible information and present realities",
+    "img": "/characters/campaigner.png"
+  },
+  {
+    "title": "Protagonist",
+    "color": "#D6ECE2",
+    "textColor": "#3D6272",
+    "badge": "ENFJ",
+    "dec": "Focuses on concrete, tangible information and present realities tangible information and present realities",
+    "img": "/characters/protagonist.png"
+  },
+  {
+    "title": "Architect",
+    "color": "#E7DFEA",
+    "textColor": "#9361A6",
+    "badge": "NITG",
+    "dec": "Focuses on concrete, tangible information and present realities tangible information and present realities",
+    "img": "/characters/architect.png"
+  },
+  {
+    "title": "Thinker",
+    "color": "#E7DFEA",
+    "textColor": "#9361A6",
+    "badge": "INTP",
+    "dec": "Focuses on concrete, tangible information and present realities tangible information and present realities",
+    "img": "/characters/thinker.png"
+  },
+  {
+    "title": "Debater",
+    "color": "#E7DFEA",
+    "textColor": "#9361A6",
+    "badge": "ENTP",
+    "dec": "Focuses on concrete, tangible information and present realities tangible information and present realities",
+    "img": "/characters/debater.png"
+  },
+  {
+    "title": "Commander",
+    "color": "#E7DFEA",
+    "textColor": "#9361A6",
+    "badge": "ENTJ",
+    "dec": "Focuses on concrete, tangible information and present realities tangible information and present realities",
+    "img": "/characters/commander.png"
+  }
+]

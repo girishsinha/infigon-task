@@ -62,7 +62,7 @@ const NavBar: React.FC = () => {
         </ul>
       </div>
       <div className="flex justify-around  w-30  mr-[5%]">
-        <img src="/bell.png" alt="icon" className="w-8 h-8" />
+        <img src="/Bell.png" alt="icon" className="w-8 h-8" />
 
         <div
           className={`${

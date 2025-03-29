@@ -77,7 +77,7 @@ const Card: React.FC<scores> = ({
         </h3>
         <div
           style={{ backgroundColor: `${color}` }}
-          className=" flex items-center rounded-full gap-2 p-2"
+          className="text-white flex items-center rounded-full gap-2 p-2"
         >
           <h3>25/30</h3>
           <div
