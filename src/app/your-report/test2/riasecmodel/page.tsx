@@ -1,58 +1,8 @@
 import React from "react";
 import CardGray from "@/app/components/CardGray";
-
+import purpose from "@/app/utility/purposeRIASEC.json";
+import benefits from "@/app/utility/benefitsRIASEC.json";
 const Page: React.FC = () => {
-  interface card {
-    title: string;
-    description: string;
-  }
-  const purpose: card[] = [
-    {
-      title: "Self Awareness",
-      description:
-        "Focuses on concrete, tangible information and present realities tangible information and present realities",
-    },
-    {
-      title: "Leadership Development",
-      description:
-        "Focuses on concrete, tangible information and present realities tangible information and present realities",
-    },
-    {
-      title: "Career Alignment",
-      description:
-        "Focuses on concrete, tangible information and present realities tangible information and present realities",
-    },
-    {
-      title: "Career Planning",
-      description:
-        "Focuses on concrete, tangible information and present realities tangible information and present realities",
-    },
-    {
-      title: "Team Building",
-      description:
-        "Focuses on concrete, tangible information and present realities tangible information and present realities",
-    },
-    {
-      title: "Conflict Resolution",
-      description:
-        "Focuses on concrete, tangible information and present realities tangible information and present realities",
-    },
-    {
-      title: "Improved Communication",
-      description:
-        "Focuses on concrete, tangible information and present realities tangible information and present realities",
-    },
-    {
-      title: "Strength Identification",
-      description:
-        "Focuses on concrete, tangible information and present realities tangible information and present realities",
-    },
-    {
-      title: "Personal Growth",
-      description:
-        "Focuses on concrete, tangible information and present realities tangible information and present realities",
-    },
-  ];
   return (
     <div className="flex flex-col gap-6">
       <h3 className="font-bold text-lg text-[#0047AB] pt-4">
@@ -73,7 +23,7 @@ const Page: React.FC = () => {
         Benefits of Understanding Interest Using RIASEC for Career Planning
       </h3>
       <div className="grid md:grid-cols-3 sm:grid-cols-2 place-items-start gap-6">
-        {purpose.map(({ title, description }) => (
+        {benefits.map(({ title, description }) => (
           <CardGray key={title} title={title} description={description} />
         ))}
       </div>

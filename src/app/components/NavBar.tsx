@@ -10,7 +10,7 @@ const NavBar: React.FC = () => {
       <div className="container mx-auto flex items-center justify-between ml-[5%] w-1/2 h-full ">
         {/* Logo */}
         <Link href="/" className="text-xl font-bold">
-          <img src="Logo.png" alt="logo" />
+          <img src="/Logo.png" alt="logo" />
         </Link>
 
         {/* Menu Items */}
@@ -62,15 +62,19 @@ const NavBar: React.FC = () => {
         </ul>
       </div>
       <div className="flex justify-around  w-30  mr-[5%]">
-        <img src="bell.png" alt="icon" className="w-8 h-8" />
+        <img src="/bell.png" alt="icon" className="w-8 h-8" />
 
         <div
           className={`${
             isOpen ? "flex" : "hidden"
           } md:flex items-center justify-around w-1/2 z-50`}
         >
-          <img src="avatar.png" alt="avatar" className="rounded-full w-8 h-8" />
-          <img src="CaretDown.png" alt="down" className="w-4 h-4" />
+          <img
+            src="/avatar.png"
+            alt="avatar"
+            className="rounded-full w-8 h-8"
+          />
+          <img src="/CaretDown.png" alt="down" className="w-4 h-4" />
         </div>
         <button
           onClick={() => setIsOpen(!isOpen)}

@@ -1,58 +1,13 @@
 import React from "react";
 import CardGray from "@/app/components/CardGray";
-
+import learningStyle from "@/app/utility/learningStyle.json";
+import applyLearning from "@/app/utility/applyLearning.json";
 const Page: React.FC = () => {
   interface card {
     title: string;
     description: string;
   }
-  const purpose: card[] = [
-    {
-      title: "Self Awareness",
-      description:
-        "Focuses on concrete, tangible information and present realities tangible information and present realities",
-    },
-    {
-      title: "Leadership Development",
-      description:
-        "Focuses on concrete, tangible information and present realities tangible information and present realities",
-    },
-    {
-      title: "Career Alignment",
-      description:
-        "Focuses on concrete, tangible information and present realities tangible information and present realities",
-    },
-    {
-      title: "Career Planning",
-      description:
-        "Focuses on concrete, tangible information and present realities tangible information and present realities",
-    },
-    {
-      title: "Team Building",
-      description:
-        "Focuses on concrete, tangible information and present realities tangible information and present realities",
-    },
-    {
-      title: "Conflict Resolution",
-      description:
-        "Focuses on concrete, tangible information and present realities tangible information and present realities",
-    },
-    {
-      title: "Improved Communication",
-      description:
-        "Focuses on concrete, tangible information and present realities tangible information and present realities",
-    },
-    {
-      title: "Strength Identification",
-      description:
-        "Focuses on concrete, tangible information and present realities tangible information and present realities",
-    },
-    {
-      title: "Personal Growth",
-      description:
-        "Focuses on concrete, tangible information and present realities tangible information and present realities",
-    },
-  ];
+
   return (
     <div className="flex flex-col gap-6">
       <h1 className="text-3xl  font-bold">
@@ -77,8 +32,8 @@ const Page: React.FC = () => {
         The purposes and applications of learning styles in career development
         include
       </h3>
-      <div className="grid md:grid-cols-3 sm:grid-cols-2 place-items-start gap-6">
-        {purpose.map(({ title, description }) => (
+      <div className="grid  md:grid-cols-2 place-items-start gap-6">
+        {learningStyle.map(({ title, description }) => (
           <CardGray key={title} title={title} description={description} />
         ))}
       </div>
@@ -87,7 +42,7 @@ const Page: React.FC = () => {
         include
       </h3>
       <div className="grid md:grid-cols-3 sm:grid-cols-2 place-items-start gap-6">
-        {purpose.map(({ title, description }) => (
+        {applyLearning.map(({ title, description }) => (
           <CardGray key={title} title={title} description={description} />
         ))}
       </div>

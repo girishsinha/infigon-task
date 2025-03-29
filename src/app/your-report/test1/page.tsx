@@ -1,58 +1,9 @@
 import React from "react";
 import CardGray from "../../components/CardGray";
+import Image from "next/image";
+import purpose from "@/app/utility/purposeMBTI.json";
 
 const Page: React.FC = () => {
-  interface card {
-    title: string;
-    description: string;
-  }
-  const purpose: card[] = [
-    {
-      title: "Self Awareness",
-      description:
-        "Focuses on concrete, tangible information and present realities tangible information and present realities",
-    },
-    {
-      title: "Leadership Development",
-      description:
-        "Focuses on concrete, tangible information and present realities tangible information and present realities",
-    },
-    {
-      title: "Career Alignment",
-      description:
-        "Focuses on concrete, tangible information and present realities tangible information and present realities",
-    },
-    {
-      title: "Career Planning",
-      description:
-        "Focuses on concrete, tangible information and present realities tangible information and present realities",
-    },
-    {
-      title: "Team Building",
-      description:
-        "Focuses on concrete, tangible information and present realities tangible information and present realities",
-    },
-    {
-      title: "Conflict Resolution",
-      description:
-        "Focuses on concrete, tangible information and present realities tangible information and present realities",
-    },
-    {
-      title: "Improved Communication",
-      description:
-        "Focuses on concrete, tangible information and present realities tangible information and present realities",
-    },
-    {
-      title: "Strength Identification",
-      description:
-        "Focuses on concrete, tangible information and present realities tangible information and present realities",
-    },
-    {
-      title: "Personal Growth",
-      description:
-        "Focuses on concrete, tangible information and present realities tangible information and present realities",
-    },
-  ];
   return (
     <div className="flex flex-col gap-6">
       <h1 className="text-3xl  font-bold">
@@ -85,25 +36,49 @@ const Page: React.FC = () => {
       <div className="flex flex-col gap-2 items-center">
         <div className="flex md:flex-row flex-col gap-2 ">
           <Card />
-          <img src="/line.svg" alt="line" className="md:block hidden" />
+          <Image
+            width={140}
+            height={140}
+            src="/line.svg"
+            alt="line"
+            className="md:block hidden"
+          />
           <Card />
         </div>
 
         <div className="flex md:flex-row flex-col gap-2 ">
           <Card />
-          <img src="/line.svg" alt="line" className="md:block hidden" />
+          <Image
+            width={140}
+            height={140}
+            src="/line.svg"
+            alt="line"
+            className="md:block hidden"
+          />
           <Card />
         </div>
 
         <div className="flex md:flex-row flex-col gap-2 ">
           <Card />
-          <img src="/line.svg" alt="line" className="md:block hidden" />
+          <Image
+            width={140}
+            height={140}
+            src="/line.svg"
+            alt="line"
+            className="md:block hidden"
+          />
           <Card />
         </div>
 
         <div className="flex md:flex-row flex-col gap-2 ">
           <Card />
-          <img src="/line.svg" alt="line" className="md:block hidden" />
+          <Image
+            width={140}
+            height={140}
+            src="/line.svg"
+            alt="line"
+            className="md:block hidden"
+          />
           <Card />
         </div>
       </div>

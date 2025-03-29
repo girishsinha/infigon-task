@@ -1,5 +1,5 @@
 import React from "react";
-
+import scores from "@/app/utility/emotionalResult.json";
 const Page: React.FC = () => {
   return (
     <div className="flex flex-col gap-6">
@@ -28,11 +28,17 @@ const Page: React.FC = () => {
           Your Scores
         </h1>
         <div className="grid lg:grid-cols-2 md:grid-cols-2 gap-4">
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
+          {scores.map((data, i) => (
+            <Card
+              i={i + 1}
+              key={i}
+              title={data.title}
+              description={data.description}
+              list={data.list}
+              color={data.color}
+              scoreColor={data.scoreColor}
+            />
+          ))}
         </div>
       </div>
     </div>
@@ -41,38 +47,68 @@ const Page: React.FC = () => {
 
 export default Page;
 
-const Card: React.FC = () => {
+interface scores {
+  i: number;
+  title: string;
+  description: string;
+  list: string[];
+  color: string;
+  scoreColor: string;
+}
+const Card: React.FC<scores> = ({
+  i,
+  title,
+  description,
+  list,
+  color,
+  scoreColor,
+}) => {
   return (
-    <div className="h-96 p-2">
+    <div className=" p-2">
       <div className="flex justify-between p-4 items-center">
-        <h1 className=" rounded-full ring-1 ring-black text-center p-1 w-8 h-8">
-          1
+        <h1
+          style={{ color: `${color}` }}
+          className={`rounded-full ring-1 ring-${color} text-center p-1 w-8 h-8`}
+        >
+          {i}
         </h1>
-        <h3 className="font-bold"> Achievement and Results</h3>
-        <div className="bg-red-400 flex items-center rounded-full gap-2 p-2">
+        <h3 className="font-bold text-center" style={{ color: `${color}` }}>
+          {title}
+        </h3>
+        <div
+          style={{ backgroundColor: `${color}` }}
+          className=" flex items-center rounded-full gap-2 p-2"
+        >
           <h3>25/30</h3>
-          <div className="h-7 w-7 rounded-full bg-black ring-1 ring-white"></div>
+          <div
+            style={{ backgroundColor: `${scoreColor}` }}
+            className="h-7 w-7 rounded-full ring-1 ring-white"
+          ></div>
         </div>
       </div>
-      <div className="ring-1 ring-black rounded-2xl p-6">
-        <p className="text-[#5B6871]">
-          Prefer tasks that involve physical work and create outcomes. Prefer
-          tasks that involve physical work and create outcomes.Prefer tasks that
-          involve physical work and create outcomes.
-        </p>
+      <div
+        style={{ borderColor: `${color}` }}
+        className={`border-2 rounded-2xl p-6`}
+      >
+        <p className="text-[#5B6871]">{description}</p>
         <ul className="text-[#5B6871]">
           <li>
-            <h3 className="font-bold text-black">{"\u25CF"}pros</h3>
+            <h3 className="font-bold text-black">Strategies</h3>
             <p>
-              They are friendly, approachable, & enjoy being around people. They
-              are often seen as the hosts of their social circles.
+              {"\u25CF"}
+              {list[0]}
             </p>
           </li>
           <li>
-            <h3 className="font-bold text-black">{"\u25CF"} cons</h3>{" "}
             <p>
-              They are friendly, approachable, & enjoy being around people. They
-              are often seen as the hosts of their social circles.
+              {"\u25CF"}
+              {list[1]}
+            </p>
+          </li>
+          <li>
+            <p>
+              {"\u25CF"}
+              {list[2]}
             </p>
           </li>
         </ul>

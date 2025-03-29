@@ -1,126 +1,14 @@
 import React from "react";
-
+import careerResults from "@/app/utility/careerResult.json";
 const Page: React.FC = () => {
-  interface scores {
-    title: string;
-    description: string;
-    list: string[];
-    color: string;
-    scoreColor: string;
-  }
+  // interface scores {
+  //   title: string;
+  //   description: string;
+  //   list: string[];
+  //   color: string;
+  //   scoreColor: string;
+  // }
 
-  const yourscores: scores[] = [
-    {
-      title: "Achievement and Results",
-      color: "#1999A1",
-      scoreColor: "#FF4646",
-      description:
-        "Prefer tasks that involve physical work and create outcomes. Prefer tasks that involve physical work and create outcomes.Prefer tasks that involve physical work and create outcomes.",
-      list: [
-        "They are friendly, approachable, & enjoy being around people. They are often seen as the 'hosts' of their social circles.",
-        "They are friendly, approachable, & enjoy being around people. They are often seen as the 'hosts' of their social circles.",
-      ],
-    },
-    {
-      title: "Helping Others",
-      color: "#A15A19",
-      scoreColor: "#FFD146",
-      description:
-        "Prefer tasks that involve physical work and create outcomes. Prefer tasks that involve physical work and create outcomes.Prefer tasks that involve physical work and create outcomes.",
-      list: [
-        "They are friendly, approachable, & enjoy being around people. They are often seen as the 'hosts' of their social circles.",
-        "They are friendly, approachable, & enjoy being around people. They are often seen as the 'hosts' of their social circles.",
-      ],
-    },
-    {
-      title: "Financial Rewards",
-      color: "#55DCDC",
-      scoreColor: "#2DC054",
-      description:
-        "Prefer tasks that involve physical work and create outcomes. Prefer tasks that involve physical work and create outcomes.Prefer tasks that involve physical work and create outcomes.",
-      list: [
-        "They are friendly, approachable, & enjoy being around people. They are often seen as the 'hosts' of their social circles.",
-        "They are friendly, approachable, & enjoy being around people. They are often seen as the 'hosts' of their social circles.",
-      ],
-    },
-    {
-      title: "Creativity and Innovation",
-      color: "#F6C61A",
-      scoreColor: "#FF4646",
-      description:
-        "Prefer tasks that involve physical work and create outcomes. Prefer tasks that involve physical work and create outcomes.Prefer tasks that involve physical work and create outcomes.",
-      list: [
-        "They are friendly, approachable, & enjoy being around people. They are often seen as the 'hosts' of their social circles.",
-        "They are friendly, approachable, & enjoy being around people. They are often seen as the 'hosts' of their social circles.",
-      ],
-    },
-    {
-      title: "Security and Stability",
-      color: "#9140F8",
-      scoreColor: "#FF4646",
-      description:
-        "Prefer tasks that involve physical work and create outcomes. Prefer tasks that involve physical work and create outcomes.Prefer tasks that involve physical work and create outcomes.",
-      list: [
-        "They are friendly, approachable, & enjoy being around people. They are often seen as the 'hosts' of their social circles.",
-        "They are friendly, approachable, & enjoy being around people. They are often seen as the 'hosts' of their social circles.",
-      ],
-    },
-    {
-      title: "Leadership and Influence",
-      color: "#00A3FF",
-      scoreColor: "#FF4646",
-      description:
-        "Prefer tasks that involve physical work and create outcomes. Prefer tasks that involve physical work and create outcomes.Prefer tasks that involve physical work and create outcomes.",
-      list: [
-        "They are friendly, approachable, & enjoy being around people. They are often seen as the 'hosts' of their social circles.",
-        "They are friendly, approachable, & enjoy being around people. They are often seen as the 'hosts' of their social circles.",
-      ],
-    },
-    {
-      title: "Continuous Learning",
-      color: "#194CA1",
-      scoreColor: "#FF4646",
-      description:
-        "Prefer tasks that involve physical work and create outcomes. Prefer tasks that involve physical work and create outcomes.Prefer tasks that involve physical work and create outcomes.",
-      list: [
-        "They are friendly, approachable, & enjoy being around people. They are often seen as the 'hosts' of their social circles.",
-        "They are friendly, approachable, & enjoy being around people. They are often seen as the 'hosts' of their social circles.",
-      ],
-    },
-    {
-      title: "Independence",
-      color: "#EE82FF",
-      scoreColor: "#FF4646",
-      description:
-        "Prefer tasks that involve physical work and create outcomes. Prefer tasks that involve physical work and create outcomes.Prefer tasks that involve physical work and create outcomes.",
-      list: [
-        "They are friendly, approachable, & enjoy being around people. They are often seen as the 'hosts' of their social circles.",
-        "They are friendly, approachable, & enjoy being around people. They are often seen as the 'hosts' of their social circles.",
-      ],
-    },
-    {
-      title: "Security and Stability",
-      color: "#B97979",
-      scoreColor: "#FF4646",
-      description:
-        "Prefer tasks that involve physical work and create outcomes. Prefer tasks that involve physical work and create outcomes.Prefer tasks that involve physical work and create outcomes.",
-      list: [
-        "They are friendly, approachable, & enjoy being around people. They are often seen as the 'hosts' of their social circles.",
-        "They are friendly, approachable, & enjoy being around people. They are often seen as the 'hosts' of their social circles.",
-      ],
-    },
-    {
-      title: "Flexibility and Work-Life Balance",
-      color: "#FA9B56",
-      scoreColor: "#FF4646",
-      description:
-        "Prefer tasks that involve physical work and create outcomes. Prefer tasks that involve physical work and create outcomes.Prefer tasks that involve physical work and create outcomes.",
-      list: [
-        "They are friendly, approachable, & enjoy being around people. They are often seen as the 'hosts' of their social circles.",
-        "They are friendly, approachable, & enjoy being around people. They are often seen as the 'hosts' of their social circles.",
-      ],
-    },
-  ];
   return (
     <div className="flex flex-col gap-6">
       <h1 className="text-3xl  font-bold">
@@ -148,7 +36,7 @@ const Page: React.FC = () => {
           Your Scores
         </h1>
         <div className="grid lg:grid-cols-2 md:grid-cols-2 gap-4">
-          {yourscores.map((data, i) => (
+          {careerResults.map((data, i) => (
             <Card
               i={i + 1}
               key={i}
